@@ -1,0 +1,50 @@
+baseURL = "http://example.org/"
+title = "Jesús Espino's Blog"
+theme = "harbor"
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+googleAnalytics = "UA-XXXXXXXX-XX" # Optional
+
+[languages]
+  [languages.en]
+    title = "Jesús Espino's Blog"
+    weight = 1
+  [languages.es]
+    title = "Blog de Jesús Espino"
+    weight = 2
+
+[Author]
+  name = "Jesús Espino"
+
+[outputs]
+  section = ["JSON", "HTML"]
+
+[[params.nav]]
+  identifier = "about"
+  name = "About"
+  icon = "fas fa-userfa-lg"
+  url = "/about/"
+  weight = 3
+
+[[params.nav]]
+  identifier = "tags"
+  name = "Tags"
+  icon = "fas fa-tag fa-lg"
+  url = "tags"
+  weight = 3
+
+[[params.nav]]
+  identifier = "search"
+  name = "Search"
+  icon = "fas fa-search fa-lg"
+  url = "search"
+  weight = 3
+
+[params.logo]
+  url = "icon.png"
+  width = 50
+  height = 50
+  alt = "Logo"
